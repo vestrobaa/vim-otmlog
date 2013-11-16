@@ -6,24 +6,26 @@ Vim-otmlog is a [Vim](http://www.vim.org/) plugin that handles basic filetype se
 
 OTM log files will automatically be detected, and set to the appropriate syntax coloring and configuration
 
+![img](http://i.imgur.com/vVDVua7.png)
+
 ## Installation
 
 I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen) for installation, and [Git](http://git-scm.com/) for version control
 
     cd ~/.vim
-    git submodule add git://github.com/vestrobaa/vim-otmlog.git bundle/syntax-otmlog
+    git submodule add https://github.com/vestrobaa/vim-otmlog.git bundle/syntax-otmlog
 
 If you are not using Git, rather use:
 
     cd ~/.vim/bundle
-    git clone git://github.com/vestrobaa/vim-otmlog.git
+    git clone https://github.com/vestrobaa/vim-otmlog.git
 
 
 ## FAQ
 
 > Do I need to rename the OTM log file extension for the plugin to work?
 
-Nope, vim-otmlog looks at the standard OTM log file extension (text), and check if the content is in OTM log file format
+Nope, vim-otmlog looks at the standard OTM log file extension (txt), and check if the content is in OTM log file format
 
 
 ## TODO
