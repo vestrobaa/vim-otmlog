@@ -10,12 +10,12 @@ OTM log files will automatically be detected, and set to the appropriate syntax 
 
 ## Installation
 
-I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen) for installation, and [Git](http://git-scm.com/) for version control
+For [pathogen.vim](https://github.com/tpope/vim-pathogen) and [Git](http://git-scm.com/) use:
 
     cd ~/.vim
     git submodule add https://github.com/vestrobaa/vim-otmlog.git bundle/syntax-otmlog
 
-If you are not using Git, rather use:
+For [pathogen.vim](https://github.com/tpope/vim-pathogen) only, use:
 
     cd ~/.vim/bundle
     git clone https://github.com/vestrobaa/vim-otmlog.git
