@@ -16,7 +16,6 @@ describe '<Plug><vim-otmlog> '
         put = '2014-03-08 10:48:59.605	00433608	Agent	Planning	Log data line 5'
         put = '2014-03-08 10:48:59.605	00433609	Agent	Planning	Log data line 6 [agentUtility - 1]'
         put = '2014-03-08 10:48:59.605	00433609	Agent	Planning	Log DOMAIN.123456'
-
     end
 
     after
