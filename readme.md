@@ -1,5 +1,7 @@
 # vim-otmlog 
 
+[![Build Status](https://travis-ci.org/vestrobaa/vim-otmlog.png)](https://travis-ci.org/vestrobaa/vim-otmlog)
+
 ## View OTM log files in Vim
 
 Vim-otmlog is a [Vim](http://www.vim.org/) plugin that handles basic filetype settings for [Oracle Transportation Management (OTM)](http://www.oracle.com/us/products/applications/ebusiness/logistics/018756.htm) log files.
