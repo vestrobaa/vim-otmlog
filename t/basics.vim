@@ -78,7 +78,7 @@ describe '<Plug><vim-otmlog> '
     end
 
     it 'should syntax color an OTM GID with a subdomain'
-        normal! 8G$BBB
+        normal! 8G$TD
         Expect synIDattr(synID(line('.'), col('.'),1), "name") ==# 'otmlogGUID'
         Expect synIDattr(synIDtrans(synID(line('.'), col('.'),1)), "name") ==# 'Identifier'
     end
