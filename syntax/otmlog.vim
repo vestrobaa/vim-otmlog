@@ -3,6 +3,8 @@
 " Maintainer:       vestrobaa <vestrobaa@gmail.com>
 " Latest Revision:  yyyy-mm-dd
 " Changes:          yyyy-mm-dd Initial version
+"                   2014-04-17 GUID's now include subdomains
+"                   2014-04-17 GUID's now include dashes (-)
 
 " Based on generic log files by Alex Dzyoba
 
@@ -23,7 +25,7 @@ syn match   otmlogTime '\c\d\d:\d\d:\d\d\(\.\d\+\)\=\([+-]\d\d:\d\d\|Z\)'
 
 syn keyword otmlogMessageType Exception Agent Planning GLog
 syn keyword otmlogException Error
-syn match otmlogGUID '\<\u[0-9A-Z\\]*\.[ 0-9A-Z_]*\>'
+syn match otmlogGUID '\<\u[0-9A-Z\\\/]*\.[ 0-9A-Z_-]*\>'
 syn match otmlogComment '\[.*\]'
 
 hi def link otmlogGUID          Function
