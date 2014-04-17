@@ -16,6 +16,7 @@ describe '<Plug><vim-otmlog> '
         put = '2014-03-08 10:48:59.605	00433608	Agent	Planning	Log data line 5'
         put = '2014-03-08 10:48:59.605	00433609	Agent	Planning	Log data line 6 [agentUtility - 1]'
         put = '2014-03-08 10:48:59.605	00433609	Agent	Planning	Log DOMAIN.123456'
+        put = '2014-03-08 10:48:59.605	00433609	Agent	Planning	Log DOMAIN\SUB.123456 - 7'
     end
 
     after
@@ -76,4 +77,15 @@ describe '<Plug><vim-otmlog> '
         Expect synIDattr(synIDtrans(synID(line('.'), col('.'),1)), "name") ==# 'Identifier'
     end
 
+    it 'should syntax color an OTM GID with a subdomain'
+        normal! 8G$BBB
+        Expect synIDattr(synID(line('.'), col('.'),1), "name") ==# 'otmlogGUID'
+        Expect synIDattr(synIDtrans(synID(line('.'), col('.'),1)), "name") ==# 'Identifier'
+    end
+
+    it 'should syntax color an OTM GID with a dash (-)'
+        normal! 8G$B
+        Expect synIDattr(synID(line('.'), col('.'),1), "name") ==# 'otmlogGUID'
+        Expect synIDattr(synIDtrans(synID(line('.'), col('.'),1)), "name") ==# 'Identifier'
+    end
 end
